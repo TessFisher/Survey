@@ -115,9 +115,6 @@ main{
 }
         
 @media (orientation:portrait){
-    html{
-        background: url(mountain-landscape-2031539_1920.jpg), lavender;
-    }
     main{
         left:-100vw;
     }
