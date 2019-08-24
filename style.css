@@ -1,1 +1,114 @@
+html{
+    font-family: 'Livvic', sans-serif;
+    font-size: 62.5%;
+    background: url(mountain-landscape-2031539_1920.jpg), lavender;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    font-size: 2em;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+header{
+    margin: 10px;
+    color: black;
+    position: absolute;
+    right: 0px;
+}
+header h1{
+    margin: 10px;
+}
+header p{
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: end;
+}
+#begin-survey{
+    margin: 0 auto;
+    padding: 0 1em 1em 1em;
+    background-color: rgba(0,0,0,0.8);
+    width: fit-content;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+#survey-box{
+    width: 100vh;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: stretch;
+    justify-items: stretch;
+}
+#survey-form{
+    transform: rotate(-90deg);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+main{
+    margin: 0;
+    height: fit-content;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 0;
+    left: -50vw;
+}
+hr{
+    background-color: white;
+}
+.selections{
+    display: flex;
+    justify-content: space-between;
+    padding-inline-end: 2em;
+}
+#textarea-box{
+    width: 90%;
+}
+textarea{
+    width: 100%;
+}
+#submit-box{
+    align-self: center;
+}
 
+/*---ANIMATION---*/
+
+main{
+    animation-name: reveal;
+    animation-delay: 1s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes reveal{
+    97%{
+        left: 2.5em;
+    }
+    100%{
+        left: 2em;
+    }
+}
+
+
+/*---MEDIA QUERIES---*/
+
+@media (orientation:portrait){
+    survey-box{
+        width: 100vw;
+        height: 100vw;
+        bottom: 0;
+    }
+}
