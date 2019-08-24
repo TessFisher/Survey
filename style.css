@@ -125,6 +125,6 @@ main{
         width: 100vh;
         max-width: 100vh;
         height: 100vw;
-        max-heigth: 100vw;
+        max-height: 100vw;
     }
 }
