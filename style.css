@@ -117,11 +117,9 @@ main{
 @media (orientation:portrait){
     html{
         background: url(mountain-portrait-2031539_1920.jpg), lavender;
-        width: 100vw;
-        height:100vh;
     }
     
-    survey-box{
+    #survey-box{
         width: 100vw;
         height: 100vh;
     }
