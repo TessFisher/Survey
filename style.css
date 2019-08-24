@@ -119,7 +119,7 @@ main{
         
 @media (orientation:portrait){
     main{
-        left:-100vw;
+        left:-150vw;
     }
     #survey-box{
         width: 100vh;
@@ -127,4 +127,12 @@ main{
         height: 100vw;
         max-height: 100vw;
     }
+    @keyframes reveal{
+    97%{
+        left: 1em;
+    }
+    100%{
+        left: 0;
+    }
+}
 }
