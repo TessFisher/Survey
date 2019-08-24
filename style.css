@@ -87,7 +87,8 @@ textarea{
 
 /*---ANIMATION---*/
 
-main{
+@media(min-width:600px){
+   main{
     animation-name: reveal;
     animation-delay: 1s;
     animation-duration: 0.5s;
@@ -103,6 +104,7 @@ main{
     100%{
         left: 2em;
     }
+ }
 }
 
 
@@ -127,12 +129,4 @@ main{
         height: 100vw;
         max-height: 100vw;
     }
-    @keyframes reveal{
-    97%{
-        left: 1em;
-    }
-    100%{
-        left: 0;
-    }
-}
 }
