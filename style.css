@@ -12,27 +12,27 @@ html {
 body {
   font-size: 2em;
   margin: auto;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
 }
 header {
-  margin: 10px;
+  margin: 0.2em;
   color: black;
   position: absolute;
   right: 0px;
 }
 header h1 {
-  margin: 10px;
+  margin: 0.2em;
 }
 header p {
-  margin: 10px;
+  margin: 0.2em;
   font-size: 1.5em;
   text-align: end;
 }
 #begin-survey {
   margin: 0 auto;
   padding: 0 1em 1em 1em;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   width: fit-content;
   border-radius: 20px 20px 0px 0px;
   color: white;
@@ -45,31 +45,34 @@ header p {
   height: 100vh;
   max-height: 100vw;
   margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
   color: white;
   display: flex;
-  align-items: stretch;
-  justify-items: stretch;
+  align-content: center;
+  justify-content: center;
 }
 #survey-form {
   transform: rotate(-90deg);
-  padding: 1em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 main {
   margin: 0;
-  width: fit-content;
-  height: fit-content;
   transform: rotate(90deg);
   position: absolute;
   top: 0;
-  left: -50vw;
+}
+.question{
+  padding-top: 0.5em;
 }
 hr {
   background-color: white;
+}
+#number{
+  width: 3em;
 }
 .selections {
   display: flex;
@@ -86,18 +89,54 @@ textarea {
   align-self: center;
 }
 
-/*---ANIMATION---*/
+/*------------MEDIA QUERIES------------*/
 
-main {
-  animation-name: reveal;
-  animation-delay: 3s;
+/*---FOR SMALL VIEWPORTS---*/
+
+@media (max-width: 700px) {
+  body {
+    font-size: 1.8em;
+  }
+  h1 {
+    font-size: 2em;
+  }
+}
+@media (max-height: 550px), (max-width: 550px) {
+  body {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 1.85em;
+  }
+}
+
+@media (max-height: 500px), (max-width: 500px) {
+  body {
+    font-size: 1.4em;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+/*---FOR DEVICES WITH A CURSOR---*/
+
+@media (hover:hover){
+  main{
+    left: -500px;
+  }
+  #survey-box{
+    height: 500px;
+  }
+  main:hover {
+  animation-name: hover-reveal;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
-@keyframes reveal {
+@keyframes hover-reveal{
   97% {
     left: 2.5em;
   }
@@ -105,32 +144,54 @@ main {
     left: 2em;
   }
 }
-
-/*---MEDIA QUERIES---*/
-
-@media (max-height: 500px) {
-  body {
-    font-size: 1.4em;
-  }
-  h1 {
-    font-size: 1.8em;
-  }
-  #begin-survey {
-    display: none;
-  }
-  main {
-    left: -500px;
-  }
 }
 
-@media (orientation: portrait) {
+/*---FOR DEVICES WITH A CURSOR -AND- IN PORTRAIT MODE---*/
+
+@media (hover:hover) and (orientation: portrait){
   main {
-    left: -500vw;
+    top: 5em;
+  }
+  @keyframes hover-reveal{
+  97% {
+    left: 0.5em;
+  }
+  100% {
+    left: 0;
+  }
+}
+}
+
+/*---FOR TOUCH SCREEN DEVICES---*/
+
+@media (hover:none){
+#begin-survey {
+    display: none;
+  }
+  main{
+  left:-1000px;
+  animation-name: reveal;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  }
+  @keyframes reveal {
+  100% {
+    left: 0;
+  }
+}
+}
+  /*---FOR TOUCH SCREEN DEVICES -AND- IN PORTRAIT MODE---*/
+  
+@media (hover:none) and (orientation: portrait){
+  main {
+    top: 7em;
   }
   #survey-box {
-    width: 100vh;
-    max-width: 100vh;
-    height: 100vw;
-    max-heigtht: 100vw;
+    width: 30em;
+    height: 99vw;
+    max-heigtht: 99vw;
   }
 }
