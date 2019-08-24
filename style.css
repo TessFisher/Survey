@@ -116,13 +116,15 @@ main{
         
 @media (orientation:portrait){
     html{
-        background: url(mountain-portrait-2031539_1920.jpg), lavender;
+        background: url(mountain-landscape-2031539_1920.jpg), lavender;
     }
     main{
         left:-100vw;
     }
     #survey-box{
         width: 100vh;
+        max-width: 100vh;
         height: 100vw;
+        max-heigth: 100vw;
     }
 }
