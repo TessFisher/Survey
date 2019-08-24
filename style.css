@@ -5,10 +5,8 @@ html{
     background-attachment: fixed;
     background-position-x: center;
     background-position-y: top;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    /*z-index set to prevent the background moving on mobile*/
-    z-index: -10;
 }
 body{
     font-size: 2em;
@@ -124,6 +122,9 @@ main{
 }
         
 @media (orientation:portrait){
+    html{
+    background-clip: padding-box;
+    }
     survey-box{
         width: 100vw;
         height: 100vw;
