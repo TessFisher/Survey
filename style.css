@@ -108,10 +108,13 @@ main{
 
 /*---MEDIA QUERIES---*/
 
-@media (max-width: 750px){
+@media (max-width: 500px){
     #body{
         font-size:1.6em;
     } 
+    #survey-box{
+        height: 100vw;   
+    }
 }
         
 @media (orientation:portrait){
