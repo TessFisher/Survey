@@ -1,132 +1,136 @@
-html{
-    font-family: 'Livvic', sans-serif;
-    font-size: 62.5%;
-    background: url(mountain-landscape-2031539_1920.jpg), lavender;
-    background-attachment: fixed;
-    background-position-x: center;
-    background-position-y: top;
-    background-size: cover;
-    background-repeat: no-repeat;
+html {
+  font-family: "Livvic", sans-serif;
+  font-size: 62.5%;
+  background: url(https://github.com/TessFisher/Survey/blob/master/mountain-landscape-2031539_1920.jpg?raw=true),
+    lavender;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-body{
-    font-size: 2em;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
+body {
+  font-size: 2em;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
 }
-header{
-    margin: 10px;
-    color: black;
-    position: absolute;
-    right: 0px;
+header {
+  margin: 10px;
+  color: black;
+  position: absolute;
+  right: 0px;
 }
-header h1{
-    margin: 10px;
+header h1 {
+  margin: 10px;
 }
-header p{
-    margin: 10px;
-    font-size: 1.5em;
-    text-align: end;
+header p {
+  margin: 10px;
+  font-size: 1.5em;
+  text-align: end;
 }
-#begin-survey{
-    margin: 0 auto;
-    padding: 0 1em 1em 1em;
-    background-color: rgba(0,0,0,0.8);
-    width: fit-content;
-    border-radius: 20px 20px 0px 0px;
-    color: white;
-    font-weight: normal;
-    text-align: center;
+#begin-survey {
+  margin: 0 auto;
+  padding: 0 1em 1em 1em;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: fit-content;
+  border-radius: 20px 20px 0px 0px;
+  color: white;
+  font-weight: normal;
+  text-align: center;
 }
-#survey-box{
-    width: 100vh;
-    max-width: 100vh;
-    height: 100vh;
-    max-height: 100vw;
-    margin: 0 auto;
-    background-color: rgba(0,0,0,0.8);
-    border-radius: 20px;
-    color: white;
-    display: flex;
-    align-items: stretch;
-    justify-items: stretch;
+#survey-box {
+  width: 100vh;
+  max-width: 100vh;
+  height: 100vh;
+  max-height: 100vw;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: stretch;
+  justify-items: stretch;
 }
-#survey-form{
-    transform: rotate(-90deg);
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+#survey-form {
+  transform: rotate(-90deg);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-main{
-    margin: 0;
-    width: fit-content;
-    height: fit-content;
-    transform: rotate(90deg);
-    position: absolute;
-    top: 0;
-    left: -50vw;
+main {
+  margin: 0;
+  width: fit-content;
+  height: fit-content;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 0;
+  left: -50vw;
 }
-hr{
-    background-color: white;
+hr {
+  background-color: white;
 }
-.selections{
-    display: flex;
-    justify-content: space-between;
-    padding-inline-end: 2em;
+.selections {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-end: 2em;
 }
-#textarea-box{
-    width: 90%;
+#textarea-box {
+  width: 90%;
 }
-textarea{
-    width: 100%;
+textarea {
+  width: 100%;
 }
-#submit-box{
-    align-self: center;
+#submit-box {
+  align-self: center;
 }
 
 /*---ANIMATION---*/
 
-@media(min-width:600px){
-   main{
-    animation-name: reveal;
-    animation-delay: 1s;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
+main {
+  animation-name: reveal;
+  animation-delay: 3s;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
-@keyframes reveal{
-    97%{
-        left: 2.5em;
-    }
-    100%{
-        left: 2em;
-    }
- }
+@keyframes reveal {
+  97% {
+    left: 2.5em;
+  }
+  100% {
+    left: 2em;
+  }
 }
-
 
 /*---MEDIA QUERIES---*/
 
-@media (max-width: 500px){
-    #body{
-        font-size:1.6em;
-    } 
-    #survey-box{
-        height: 100vw;   
-    }
+@media (max-height: 500px) {
+  body {
+    font-size: 1.4em;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  #begin-survey {
+    display: none;
+  }
+  main {
+    left: -500px;
+  }
 }
-        
-@media (orientation:portrait){
-    main{
-        left:-150vw;
-    }
-    #survey-box{
-        width: 100vh;
-        max-width: 100vh;
-        height: 100vw;
-        max-height: 100vw;
-    }
+
+@media (orientation: portrait) {
+  main {
+    left: -500vw;
+  }
+  #survey-box {
+    width: 100vh;
+    max-width: 100vh;
+    height: 100vw;
+    max-heigtht: 100vw;
+  }
 }
