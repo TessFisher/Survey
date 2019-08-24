@@ -118,7 +118,9 @@ main{
     html{
         background: url(mountain-portrait-2031539_1920.jpg), lavender;
     }
-    
+    main{
+        left:-100vw;
+    }
     #survey-box{
         width: 100vw;
         height: 100vh;
