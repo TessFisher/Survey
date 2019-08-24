@@ -58,6 +58,7 @@ header p{
 }
 main{
     margin: 0;
+    width: fit-content;
     height: fit-content;
     transform: rotate(90deg);
     position: absolute;
@@ -105,10 +106,21 @@ main{
 
 /*---MEDIA QUERIES---*/
 
+@media (max-width: 750px){
+    #main{
+        font-size:1.8rem;
+    } 
+}
+
+@media (max-width: 500px){
+    #main{
+        font-size:1.6rem;
+    } 
+}
+        
 @media (orientation:portrait){
     survey-box{
         width: 100vw;
         height: 100vw;
-        bottom: 0;
     }
 }
