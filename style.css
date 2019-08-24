@@ -115,11 +115,11 @@ main{
 }
         
 @media (orientation:portrait){
-    html{
-    height: 100vh;
+    body{
+    height: 100%;
     }
     survey-box{
         width: 100vw;
-        height: 100vw;
+        height: 100vh;
     }
 }
