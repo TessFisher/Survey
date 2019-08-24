@@ -1,1 +1,85 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Walking in Nature</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Walking in Nature</h1>
+            <p id="description">a survey</p>
+        </header>
+        <main>
+            <h2 id="begin-survey">Begin Survey</h2>
+            <div id="survey-box">
+                <form id="survey-form" >
+                    <div class="question">
+                        <label id="name-label" for="name">Name:&nbsp</label>
+                        <input id="name" type="text" placeholder="Name">
+                    </div>
+                    <div class="question">
+                        <label id="email-label" for:"email">Email:&nbsp</label>
+                        <input id="email" type="email" placeholder="Email">
+                    </div>
+                    <div id="line">
+                        <hr>
+                    </div>
+                    <div class="question">
+                        <label id="number-label" for="number">About how many days per month do you take a walk outside? </label>
+                        <br>
+                        <input id="number" type="number" min="0" max="30" placeholder="0-30">
+                    </div>
+                    <div class="question">
+                        <label id="dropdown-label" for="dropdown">Which is your favorite place to walk in? </label>
+                        <br>
+                        <select id="dropdown">
+                            <option>---Choose one---</option>
+                            <option>On a Track</option>
+                            <option>On a Sidewalk in you neighborhood</option>
+                            <option>In your own yard</option>
+                            <option>In a park</option>
+                            <option>Through a field</option>
+                            <option>Around a pond or lake</option>
+                            <option>By a creek or stream</option>
+                            <option>Through a forest</option>
+                            <option>On a beach</option>
+                        </select>
+                    </div>
+                    <div class="question">
+                        <label id="radio-label" for="radio">Which is your favorite time of day walk outside?</label>
+                        <br>
+                        <div class="selections">
+                            <label><input class="radio" type="radio" name="radio">Morning</label>
+                            <label><input class="radio" type="radio" name="radio">Midday</label>
+                            <label><input class="radio" type="radio" name="radio">Evening</label>
+                            <label><input class="radio" type="radio" name="radio">Night</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <label id="checkbox-label" for"checkbox">Which are your favorite Seasons to walk outside?</label>
+                        <br>
+                        <div class="selections">
+                            <label><input class="checkbox" type="checkbox" name="checkbox" value="Spring">Spring</label>
+                            <label><input class="checkbox" type="checkbox" name="checkbox" value="Summer">Summer</label>
+                            <label><input class="checkbox" type="checkbox" name="checkbox" value="Autumn">Autumn</label>
+                            <label><input class="checkbox" type="checkbox" name="checkbox" value="Winter">Winter</label>
+                        </div>
+                    </div>
+                    <div class="question">
+                        <label id="textarea-label" for="textarea">Describe your perfect scenario for a walk outside:</label>
+                        <br>
+                        <div id="textarea-box">
+                            <textarea rows="3" name="textarea"></textarea>
+                        </div>
+                    </div>
+                    <div id="submit-box">
+                        <button id="submit">Submit</button>
+                    </div>
+                </form>
+            </div>    
+        </main>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
