@@ -107,14 +107,14 @@ main{
 /*---MEDIA QUERIES---*/
 
 @media (max-width: 750px){
-    #main{
-        font-size:1.8rem;
+    #body{
+        font-size:1.8em;
     } 
 }
 
 @media (max-width: 500px){
-    #main{
-        font-size:1.6rem;
+    #body{
+        font-size:1.6em;
     } 
 }
         
