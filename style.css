@@ -191,7 +191,7 @@ textarea {
   }
   #survey-box {
     width: 35em;
-    height: 99vw;
-    max-heigtht: 99vw;
+    height: 100vw;
+    max-height: 100vw;
   }
 }
