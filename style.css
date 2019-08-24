@@ -40,7 +40,9 @@ header p{
 }
 #survey-box{
     width: 100vh;
+    max-width: 100vh;
     height: 100vh;
+    max-height: 100vh;
     margin: 0 auto;
     background-color: rgba(0,0,0,0.8);
     border-radius: 20px;
@@ -48,6 +50,7 @@ header p{
     display: flex;
     align-items: stretch;
     justify-items: stretch;
+    overflow: auto;
 }
 #survey-form{
     transform: rotate(-90deg);
@@ -108,7 +111,7 @@ main{
 
 @media (max-width: 750px){
     #body{
-        font-size:1.8em;
+        font-size:1.7em;
     } 
 }
 
