@@ -212,6 +212,9 @@ html {
     h1 {
       font-size: 2em;
     }
+    main{
+      height: 100%;
+    }
     #survey-box{
       height: 100%;
     }
@@ -241,7 +244,7 @@ html {
       top: 7em;
     }
     #survey-box {
-      width: 45em;
+      width: 35em;
     }
   }
   
