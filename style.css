@@ -205,30 +205,25 @@ html {
 
   /*---FOR TOUCH SCREEN DEVICES -AND- A SMALLER VIEWPORTS---*/
 
-  @media (hover:none) and (max-width: 600px) {
+  @media (hover:none) and (max-width: 700px) {
     body {
       font-size: 1.8em;
     }
     h1 {
       font-size: 2em;
     }
-    main{
-      height: 100%;
-    }
-    #survey-box{
-      height: 100%;
-    }
-    #survey-form{
-      width: 95vw;
-    }
+    #survey-box {
+      background-color: rgba(100, 0, 0, 0.7);
   }
-  @media (hover:none) and (max-width: 550px) {
+  @media (hover:none) and (max-width: 600px) {
     body {
       font-size: 1.5em;
     }
     h1 {
       font-size: 1.85em;
     }
+    #survey-box {
+      background-color: rgba(0, 100, 0, 0.7);
   }
   
   @media (hover:none) and (max-width: 500px) {
@@ -238,6 +233,8 @@ html {
     h1 {
       font-size: 1.6em;
     }
+    #survey-box {
+      background-color: rgba(0, 0, 100, 0.7);
   }
 
    /*---FOR TOUCH SCREEN DEVICES -AND- IN PORTRAIT MODE---*/
