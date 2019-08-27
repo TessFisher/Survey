@@ -178,11 +178,14 @@ html {
   /*---FOR TOUCH SCREEN DEVICES---*/
   
   @media (hover:none){
+  header{
+    position: absolute;
+  }
   #begin-survey {
       display: none;
     }
     #survey-box{
-    height: 100vw;
+    height: 600px;
     }
     main{
     left:-1000px;
@@ -208,6 +211,9 @@ html {
     }
     h1 {
       font-size: 2em;
+    }
+    #survey-box{
+      height: 100%;
     }
   }
   @media (hover:none) and (max-width: 550px) {
@@ -235,6 +241,7 @@ html {
       top: 7em;
     }
     #survey-box {
-      width: 35em;
+      width: 45em;
     }
   }
+  
