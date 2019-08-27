@@ -218,6 +218,9 @@ html {
     #survey-box{
       height: 100%;
     }
+    #survey-form{
+      width: 95vw;
+    }
   }
   @media (hover:none) and (max-width: 550px) {
     body {
@@ -230,10 +233,10 @@ html {
   
   @media (hover:none) and (max-width: 500px) {
     body {
-      font-size: 1.4em;
+      font-size: 1.3em;
     }
     h1 {
-      font-size: 1.8em;
+      font-size: 1.6em;
     }
   }
 
