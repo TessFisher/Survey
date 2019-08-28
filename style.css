@@ -212,18 +212,9 @@ html {
       font-size: 2em;
     }
     #survey-box {
-      width: 45em;
-      background-color: rgba(100, 0, 0, 0.7);
-  }
-  @media (hover:none) and (max-width: 600px) {
-    body {
-      font-size: 1.5em;
-    }
-    h1 {
-      font-size: 1.85em;
-    }
-    #survey-box {
-      background-color: rgba(0, 100, 0, 0.7);
+      height: 500px;
+      width: 40em;
+      background-color: rgba(100, 50, 0, 0.7);
   }
   
   @media (hover:none) and (max-width: 500px) {
@@ -234,7 +225,8 @@ html {
       font-size: 1.6em;
     }
     #survey-box {
-      background-color: rgba(0, 0, 100, 0.7);
+      height: 400px;
+      background-color: rgba(0, 50, 100, 0.7);
   }
 
    /*---FOR TOUCH SCREEN DEVICES -AND- IN PORTRAIT MODE---*/
