@@ -41,7 +41,6 @@ html {
   }
   #survey-box {
     width: 100vh;
-    max-width: 100vh;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 20px;
@@ -213,6 +212,7 @@ html {
       font-size: 2em;
     }
     #survey-box {
+      width: 55em;
       background-color: rgba(100, 0, 0, 0.7);
   }
   @media (hover:none) and (max-width: 600px) {
@@ -244,7 +244,7 @@ html {
       top: 7em;
     }
     #survey-box {
-      width: 35em;
+      width: 45em;
     }
   }
   
