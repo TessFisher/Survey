@@ -213,8 +213,8 @@ html {
     }
     #survey-box {
       height: 500px;
-      width: 40em;
-      background-color: rgba(100, 50, 0, 0.7);
+      width: 600px;
+      background-color: rgba(100, 0, 0, 0.7);
   }
   
   @media (hover:none) and (max-width: 500px) {
@@ -226,7 +226,8 @@ html {
     }
     #survey-box {
       height: 400px;
-      background-color: rgba(0, 50, 100, 0.7);
+        width: 500px;
+      background-color: rgba(0, 0, 100, 0.7);
   }
 
    /*---FOR TOUCH SCREEN DEVICES -AND- IN PORTRAIT MODE---*/
@@ -234,9 +235,6 @@ html {
   @media (hover:none) and (orientation: portrait){
     main {
       top: 7em;
-    }
-    #survey-box {
-      width: 45em;
-    }
+      }
   }
   
