@@ -68,7 +68,7 @@ hr {
   background-color: white;
 }
 #number {
-  width: 3em;
+  width: 5em;
 }
 .selections {
   display: flex;
@@ -83,6 +83,9 @@ textarea {
 }
 #submit-box {
   align-self: center;
+}
+#submit{
+font-size: 2em;
 }
 
 /*------------MEDIA QUERIES------------*/
