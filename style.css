@@ -110,9 +110,6 @@ padding-top: 0.5em;
   }
 
   @keyframes hover-reveal {
-    97% {
-      left: 2.5em;
-    }
     100% {
       left: 2em;
     }
