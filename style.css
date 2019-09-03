@@ -101,7 +101,7 @@ padding-top: 0.5em;
   #survey-box {
     height: 600px;
   }
-  main:hover {
+  main:active {
     animation-name: hover-reveal;
     animation-duration: 1s;
     animation-iteration-count: 1;
